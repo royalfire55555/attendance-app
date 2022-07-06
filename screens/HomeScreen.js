@@ -1,7 +1,4 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { createAppContainer, createSwitchNavigator } from "react-navigation";
-
 
 export default function App() {
     return (
@@ -20,10 +17,3 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
 });
-
-var AppNavigator = createSwitchNavigator({
-    HomeScreen: HomeScreen,
-    SummaryScreen: SummaryScreen,
-});
-
-const AppContainer = createAppContainer(AppNavigator);
